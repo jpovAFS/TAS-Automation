@@ -13,7 +13,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:1.1.41")     
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.31")     
     }
 }
 
@@ -22,18 +22,20 @@ apply plugin: 'eclipse'
 apply plugin: 'net.serenity-bdd.aggregator'
 //apply plugin: "eu.leontebbens.gradle.chromedriver-updater"
 
+
+
 dependencies {
 	//JSON Dependencies
-	compile 'com.jayway.jsonpath:json-path:2.2.0'
+	compile 'com.jayway.jsonpath:json-path:2.9.0'
 	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
 	compile "org.codehaus.groovy:groovy-all:2.4.7"
 
 	//Serenity Dependencies
-	testCompile 'net.serenity-bdd:serenity-rest-assured:1.1.41'
-	testCompile 'net.serenity-bdd:serenity-junit:1.1.41'
-	testCompile 'net.serenity-bdd:serenity-core:1.1.41'
-	testCompile 'net.serenity-bdd:serenity-cucumber:1.1.10'
-	testCompile 'de.codecentric:jbehave-junit-runner:1.1.0'
+	testCompile 'net.serenity-bdd:serenity-rest-assured:1.9.31'
+	testCompile 'net.serenity-bdd:serenity-junit:1.9.31'
+	testCompile 'net.serenity-bdd:serenity-core:1.9.31'
+	testCompile 'net.serenity-bdd:serenity-cucumber:1.9.12'
+	testCompile 'de.codecentric:jbehave-junit-runner:1.2.0'
 	
 }
 
